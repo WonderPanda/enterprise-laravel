@@ -4,7 +4,7 @@ namespace EnterpriseLaravel;
 
 use Illuminate\Support\ServiceProvider;
 
-class EnterpriseLaravelServiceProvider extends ServiceProvider {
+class EnvironmentProvider extends ServiceProvider {
 
     public function boot()
     {
