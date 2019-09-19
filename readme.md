@@ -3,6 +3,10 @@
 ### Should I Use This for My Next Enterprise Project™?
 No. Not yet. I can see the irony. This is still a work in progress
 
+### Instructions
+- `composer require wonderpanda/enterprise-laravel`
+- `php artisan vendor:publish --provider=EnterpriseLaravel\EnvironmentProvider`
+
 ### Objectives
 - [x] Simple AF. Just run `docker-compose up`
 - [x] Just use Docker. Works anywhere that Docker is installed, we love Windows developers too

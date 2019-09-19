@@ -17,7 +17,7 @@ class EnvironmentProvider extends ServiceProvider {
     public function register()
     {
         if (! defined('LARAVEL_ENTERPRISE_PATH')) {
-            define('LARAVEL_ENTERPRISE_PATH', realpath(__DIR__ . '/enterprise-laravel/'));
+            define('LARAVEL_ENTERPRISE_PATH', realpath(__DIR__ . '/../'));
         }
     }
 
