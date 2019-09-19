@@ -12,19 +12,6 @@ ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS="0" \
 
 RUN docker-php-ext-install pdo_mysql opcache
 
-#     && apt-get update && apt-get install -y --no-install-recommends \
-#     libmcrypt-dev mysql-client libmagickwand-dev libpng-dev supervisor \
-#     && pecl install imagick \
-#     && docker-php-ext-enable imagick \
-#     && docker-php-ext-enable bcmath \
-#     && docker-php-ext-configure gd \
-#     --with-gd \
-#     --with-freetype-dir=/usr/include/ \
-#     --with-png-dir=/usr/include/ \
-#     --with-jpeg-dir=/usr/include/ \
-#     && docker-php-ext-install gd \
-#     && docker-php-ext-install pcntl
-
 # COPY dev-env/supervisord.conf /etc/supervisord.conf
 
 RUN if [ "$xdebug" = "true" ] ; then pecl install xdebug && docker-php-ext-enable xdebug ; else echo Running app without XDEBUG ; fi

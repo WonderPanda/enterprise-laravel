@@ -25,8 +25,14 @@ services:
     build:
       context: ./
       dockerfile: ./dev-env/dockerfiles/web.dockerfile
-    working_dir: /var/www
+    working_dir: /var/wwwdo
     volumes:
       - ./:/var/www:delegated
     ports:
       - 8080:80
+
+  composer:
+    image: composer:latest
+    user: "1000:1000"
+    volumes:
+      - ./:/var/www:delegated

@@ -7,6 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Enterprise Laravel
+
+### Objectives
+- [x] Simple AF. Just run `docker-compose up`
+- [x] Just use Docker. Works anywhere that Docker is installed, we love Windows developers too
+- [ ] No PHP installation required on the developer machine. This includes Composer and PHP Artisan CLI interactions. No more "works on my machine" syndrome
+- [ ] Simple Debugging. It shouldn't take hours to be able to debug your source code
+- [ ] Dev on the same containers that you would deploy to production. Only enable dev required functionality through Configuration instead of bloated, custom Dockerfiles
+- [ ] Testing as a first class citizen. Use a real database (just like you would in production)
+- [x] Sane defaults for NGINX and FPM. Full customizability through external config files
+- [ ] Automatic code formatting on Git Hooks out of the box. No more PR fights over code formatting
+- [ ] Small Alpine based Containers 
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
