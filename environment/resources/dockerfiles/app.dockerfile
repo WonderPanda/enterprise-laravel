@@ -16,8 +16,8 @@ RUN docker-php-ext-install pdo_mysql opcache
 
 RUN if [ "$xdebug" = "true" ] ; then pecl install xdebug && docker-php-ext-enable xdebug ; else echo Running app without XDEBUG ; fi
 
-COPY dev-env/config/php/conf.d/*.ini /usr/local/etc/php/conf.d/
-COPY dev-env/config/fpm/*.conf /usr/local/etc/php-fpm.d/
+COPY environment/config/php/conf.d/*.ini /usr/local/etc/php/conf.d/
+COPY environment/config/fpm/*.conf /usr/local/etc/php-fpm.d/
 
 
 

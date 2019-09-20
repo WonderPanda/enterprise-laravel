@@ -5,7 +5,7 @@ No. Not yet. I can see the irony. This is still a work in progress
 
 ### Instructions
 - `composer require wonderpanda/enterprise-laravel`
-- `php artisan vendor:publish --provider=EnterpriseLaravel\EnvironmentProvider`
+- `php artisan vendor:publish --provider='EnterpriseLaravel\EnvironmentProvider'`
 
 ### Objectives
 - [x] Simple AF. Just run `docker-compose up`
