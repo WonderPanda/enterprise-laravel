@@ -9,8 +9,8 @@ class EnvironmentProvider extends ServiceProvider {
     public function boot()
     {
         $this->publishes([
-            LARAVEL_ENTERPRISE_PATH.'./environment/resources' => base_path('environment'),
-            LARAVEL_ENTERPRISE_PATH.'./environment/docker-compose.yml' => base_path('docker-compose.yml'),
+            LARAVEL_ENTERPRISE_PATH.'/environment/resources' => base_path('environment'),
+            LARAVEL_ENTERPRISE_PATH.'/environment/docker-compose.yml' => base_path('docker-compose.yml'),
         ]);
     }
 
