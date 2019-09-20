@@ -1,6 +1,6 @@
 ## Enterprise Laravel
 
-### Should I Use This for My Next Enterprise Project™?
+### Should I Use This for My Next Enterprise™ Project?
 No. Not yet. I can see the irony. This is still a work in progress
 
 ### Instructions
